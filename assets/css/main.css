@@ -55,15 +55,20 @@
     justify-content: center;
 }
 
+
+
 .search-box__typology-item {
-    color: var(--white-color);
+   
+}
+
+.search-box__typology-item-link {
     background-color: rgba(43, 42, 42, 0.3);
     width: 112px;
     display: flex;
     padding: 20px 24px;
     flex-direction: column;
     align-items: center;
-    margin: 0 16px;
+    margin: 0 16px;      
 }
 
 .search-box__typology-item-img {
@@ -75,6 +80,7 @@
 .search-box__typology-item-name {
     font-size: 1.1rem;
     letter-spacing: 2px;
+    color: var(--white-color);
 }
 
 .app__section-destination {
