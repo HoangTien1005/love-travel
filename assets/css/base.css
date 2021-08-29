@@ -1,0 +1,120 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --title-color: #555;
+    --text-color: #9a9a9a;
+
+    --primary-first-color: #4bbad6;
+    --primary-second-color: #ee636f;
+    --primary-third-color: #55bd9c;
+    --primary-fourth-color: #ba71da;
+    --primary-fifth-color: #f3a46b;
+    --primary-sixth-color: #fbd233;
+
+    --header-height: 104px;
+
+    --height-column-4: calc(1200px * 33.3333%);
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+/* take 4/12 width */
+.grid__column-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 33.3333%;
+}
+
+/* take 8/12 width */
+.grid__column-8 {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 66.6667%;
+}
+
+.btn {
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+
+/* button color */
+.btn--primary-first-color {
+    background-color: var(--primary-first-color);
+}
+
+.btn--primary-second-color {
+    background-color: var(--primary-second-color);
+}
+
+.btn--primary-third-color {
+    background-color: var(--primary-third-color);
+}
+
+.btn--primary-fourth-color {
+    background-color: var(--primary-fourth-color);
+}
+
+.btn--primary-fifth-color {
+    background-color: var(--primary-fifth-color);
+}
+
+.btn--primary-sixth-color {
+    background-color: var(--primary-sixth-color);
+}
+
+.slider {
+    position: relative;
+    margin-top: 0;
+}
+
+
+
