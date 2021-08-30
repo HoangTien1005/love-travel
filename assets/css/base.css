@@ -11,6 +11,14 @@
     --primary-fifth-color: #f3a46b;
     --primary-sixth-color: #fbd233;
 
+    --berlin-symbol-background-color: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    --hongkong-symbol-background-color: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+    --francisco-symbol-background-color: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+    --phuket-symbol-background-color: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+    --amsterdam-symbol-background-color: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+    --tuscany-symbol-background-color: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+
+
     --header-height: 104px;
 
     --height-column-4: calc(1200px * 33.3333%);
@@ -27,7 +35,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -58,11 +66,27 @@ a {
     margin-right: -16px;
 }
 
+
+/* take 2/12 width */
+.grid__column-2 {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 16.6666%;
+}
+
+
 /* take 4/12 width */
 .grid__column-4 {
     padding-left: 16px;
     padding-right: 16px;
     width: 33.3333%;
+}
+
+/* take 6/12 width */
+.grid__column-6 {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 50%;
 }
 
 /* take 8/12 width */
@@ -81,6 +105,7 @@ a {
     letter-spacing: 2px;
     align-items: center;
     text-align: center;
+    text-decoration: none;
     color: var(--white-color);
     cursor: pointer;
 }
@@ -111,10 +136,113 @@ a {
     background-color: var(--primary-sixth-color);
 }
 
+/* slider */
+
 .slider {
     position: relative;
     margin-top: 0;
 }
 
+/* animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.animation--slide-in {
+    animation: slideIn ease-out 0.5s;
+}
 
 
+.animation--slide-out {
+    animation: slideOut ease-out 0.5s;
+}
+
+.background--white {
+    background-color: var(--white-color);
+}
+
+/* modal */
+
+.modal-container {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+}
+
+.modal__label {
+    background-color: var(--primary-second-color);
+    color: var(--white-color);
+    letter-spacing: 1px;
+    padding: 0 3px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    min-width: 56px;
+    transform: translateX(-50%);
+}
+
+.modal__price {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #555;
+    color: var(--white-color);
+
+}
+
+.modal__price-symbol {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 75%;
+    bottom: 50%;
+}
+
+.modal__price-number {
+    position: absolute;
+    top: 57%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.modal__icon {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #555;
+    bottom: 0;
+    left: -28%;
+}
+
+.modal__icon-img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mb-76 {
+    margin-bottom: 76px;
+}

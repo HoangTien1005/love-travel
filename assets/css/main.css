@@ -2,20 +2,33 @@
     position: absolute;
     text-align: center;
     width: calc(100% - 16px);
-    top: 253px;
+    top: 234px;
     height: 280px;
     margin: 0 8px;
 }
 
 .search-box__title {
     font-size: 5rem;
+    line-height: 5rem;
     color: var(--white-color);
-    margin-bottom: 54px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
 .search-box__title span {
-    text-decoration: underline var(--primary-fourth-color);
+    position: relative;
+    z-index: 1;
+}
 
+.search-box__title span::after {
+    content: "";
+    position: absolute;
+    top: 78%;
+    left: 0;
+    background-color: var(--primary-fourth-color);
+    width: 100%;
+    height: 5px;
+    z-index: -1;
 }
 
 .search-box__description {
@@ -38,7 +51,26 @@
     border-radius: 20px;
     cursor: pointer;
     margin-bottom: 68px;
+}
 
+.search-box__input-focus {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    z-index: 0;
+    border-radius: 20px;
+    padding: 13px 24px;
+    cursor: pointer;
+}
+
+
+.search-box__input-focus:focus ~ .search-box__list{
+    display: block;
 }
 
 .search-box__icon {
@@ -50,15 +82,31 @@
     color: #999;
 }
 
-.search-box__typology {
-    display: flex;
-    justify-content: center;
+.search-box__list {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 100%;
+    left: -2px;
+    display: none;
+}
+
+.search-box__list-item {
+    padding: 8px 28px;
+    display: block;
+}
+
+.search-box__list-item:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.search-box__list-item--sub {
+    padding-left: 44px;
 }
 
 
-
-.search-box__typology-item {
-   
+.search-box__typology {
+    display: flex;
+    justify-content: center;
 }
 
 .search-box__typology-item-link {
@@ -68,7 +116,11 @@
     padding: 20px 24px;
     flex-direction: column;
     align-items: center;
-    margin: 0 16px;      
+    margin: 0 16px;    
+    transition: linear 0.2s;  
+}
+.search-box__typology-item-link:hover {
+    background-color: rgba(43, 42, 42, 0.4);
 }
 
 .search-box__typology-item-img {
@@ -83,8 +135,8 @@
     color: var(--white-color);
 }
 
-.app__section-destination {
-
+.section-destination {
+    margin-bottom: 52px;
 }
 
 .section-destination__heading {
@@ -94,14 +146,16 @@
     margin-bottom: 60px;
 }
 
-.section-destination__heading-subtitle {
+.section-destination__heading-subtitle,
+.section-beach__heading-subtitle {
     font-size: 1.4rem;
     color: var(--text-color);
     font-weight: 400;
     letter-spacing: 2px;
 }
 
-.section-destination__heading-title {
+.section-destination__heading-title,
+.section-beach__heading-title {
     font-size: 3.6rem;
     color: var(--title-color);
 }
@@ -127,7 +181,7 @@
     margin-bottom: 24px;
 }
 
-.section-destination__item:hover  .section-destination__item-package-container{
+.section-destination__item:hover  .section-destination__item-view-container{
    opacity: 1;
 }
 
@@ -171,7 +225,7 @@
     letter-spacing: 2px;
 }
 
-.section-destination__item-package-container {
+.section-destination__item-view-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -182,27 +236,343 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--white-color);
     opacity: 0;
     -webkit-transition: opacity;
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 800ms;
 }
 
-.section-destination__item-package-title {
+.section-destination__item-view-title {
+    color: var(--white-color);
     font-size: 2rem;
     margin-bottom: 12px;
 }
 
-.section-destination__item-package-place {
+.section-destination__item-view-place {
     font-size: 1.4rem;
-    margin-top: 12px;
+    padding: 6px 0;
+    letter-spacing: 1px;
+    color: var(--white-color);
+}
+
+.section-destination__item-view-btn {
+    background-color: var(--white-color);
+    color: var(--primary-first-color);
+    margin-top: 18px;
+}
+
+.section-holiday {
+    margin-bottom: 60px;
+    width: 100%;
+    height: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/background_holiday.jpeg) center / cover no-repeat;
+}
+
+.section-holiday__title-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-holiday__title {
+    color: var(--white-color);
+    margin-right: 60px;
+}
+
+
+.section-holiday__title-first {
+    margin: 0;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+
+.section-holiday__title-second {
+    margin: 0;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.section-holiday__title-second span {
+    position: relative;
+    z-index: 1;
+}
+
+.section-holiday__title-second span::after {
+    content: "";
+    position: absolute;
+    top: 77%;
+    left: 0;
+    background-color: var(--primary-second-color);
+    width: 100%;
+    height: 5px;
+    z-index: -1;
+}
+
+
+
+
+.section-holiday__btn-container {
+    flex: 1;
+}
+
+.section-holiday__btn {
+    color: var(--primary-second-color);
+    background-color: var(--white-color);
+    padding: 14px 35px;
+    border-radius: 25px;
+    margin-left: 80px;
+}
+
+.section-beach {
+    margin-bottom: 80px;
+}
+
+.section-beach__heading {
+    margin-bottom: 40px;
+}
+
+.section-beach__heading-title span {
+    position: relative;
+    z-index: 1;
+}
+
+.section-beach__heading-title span::after {
+    content: "";
+    position: absolute;
+    top: 68%;
+    left: 0;
+    background-color: var(--primary-first-color);
+    width: 100%;
+    height: 5px;
+    z-index: -1;   
+}
+
+.section-beach__heading-subtitle {
+    margin-bottom: -8px;
+}
+
+
+.section-beach__description {
+    margin-right: 24px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2.8rem;
+    margin-bottom: 36px;
+}
+
+.section-beach__description p:first-child {
+    margin-bottom: 20px;
+}
+
+.section-beach__price {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.section-beach__price-old {
+    text-decoration: line-through;
+    color: #dadada;
+    font-size: 3rem;
+}
+
+.section-beach__price-new {
+    color: var(--title-color);
+    font-size: 3rem;
+    margin: 0 12px;
+}
+
+.section-beach__price-per-person {
+    font-size: 1.4rem;
+    color: var(--title-color);
+
+}
+
+.section-beach__btn-container {
+    margin-bottom: 100px;
+}
+
+.section-beach__btn {
+    padding: 12px 35px;
+    border-radius: 25px;
+}
+
+
+.section-beach__slider-background {
+    position: relative;
+    padding-top: 416px;
+    margin-top: 16px;
+    margin-left: 24px;
+    background-color: red;
+    background: url(../img/background_beach1.jpeg) top center / cover no-repeat;
+}
+
+.section-beach__slider-options {
+    position: absolute;
+    height: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.section-beach__slider-options-btn {
+    width: 60px;
+    margin: 8px 12px;
+    padding: 8px 0;
+    display: inline;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+    transition: linear 0.1s;
+    cursor: pointer;
+}
+
+.section-beach__slider-options-btn--first {
+    border-color: var(--white-color);
+}
+
+.section-beach__slider-options-btn:hover {
+    border-color: var(--white-color);
+}
+
+.section-beach__slider-countdown {
+    position: absolute;
+    display: flex;
+    background-color: var(--primary-first-color);
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+}
+
+.section-beach__slider-countdown-item {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 24px;
+}
+
+.section-beach__slider-countdown-separate {
+    color: var(--black-color);
+    opacity: 0.05;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+}
+
+
+.section-beach__slider-countdown-item-number {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    margin-bottom: 8px;
     letter-spacing: 1px;
 }
 
-.section-destination__item-package-btn {
-    background-color: var(--white-color);
-    color: var(--primary-first-color);
+.section-beach__slider-countdown-item-name {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.section-beach__tour {
     margin-top: 24px;
+    display: flex;
+}
+
+.section-beach__tour-icon {
+    width: 13%;
+    height: 13%;
+    margin-right: 20px;
+}
+
+.section-beach__tour-content {
+    flex: 1;
+}
+
+.section-beach__tour-title {
+    font-size: 2.4rem;
+    color: var(--title-color);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.section-beach__tour-description {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2.4rem;
+    margin: 24px 0;
+
+}
+
+.section-beach__tour-btn {
+    color: var(--primary-first-color);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.section-discover {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.section-discover__container {
+    position: relative;
+    padding-top: 270px;
+    flex: 1;
+}
+
+.section-discover--cities {
+    background: url(../img/background_discover1.jpeg) center / cover no-repeat;
+}
+
+.section-discover--nature {
+    background: url(../img/background_discover2.jpeg) center / cover no-repeat;
+}
+
+.section-discover__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-discover__subtitle {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+.section-discover__title {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    color: var(--white-color);
+    margin-top: 4px;
+    margin-bottom: 32px;
+
+}
+
+.section-discover__btn {
+    padding: 14px 35px;
+    border-radius: 25px;
+    background-color: var(--white-color);
+}
+
+.section-discover__btn--cities {
+    color: var(--primary-fifth-color);
+}
+
+.section-discover__btn--nature {
+    color: var(--primary-third-color);
 }
 
