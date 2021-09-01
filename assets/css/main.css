@@ -1,3 +1,7 @@
+.app {
+    overflow: hidden;
+}
+
 .search-box {
     position: absolute;
     text-align: center;
@@ -9,9 +13,9 @@
 
 .search-box__title {
     font-size: 5rem;
-    line-height: 5rem;
+    line-height: 6rem;
     color: var(--white-color);
-    margin-bottom: 40px;
+    margin-bottom: 12px;
     position: relative;
 }
 
@@ -34,9 +38,10 @@
 .search-box__description {
     color: var(--white-color);
     font-size: 2rem;
+    line-height: 3rem;
     font-weight: 400;
     letter-spacing: 4px;
-    margin-bottom: 66px;
+    margin-bottom: 60px;
 }
 
 .search-box__input {
@@ -109,9 +114,16 @@
     justify-content: center;
 }
 
+.search-box__typology-item {
+    margin-bottom: 32px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .search-box__typology-item-link {
     background-color: rgba(43, 42, 42, 0.3);
-    width: 112px;
+    min-width: 112px;
     display: flex;
     padding: 20px 24px;
     flex-direction: column;
@@ -149,6 +161,7 @@
 .section-destination__heading-subtitle,
 .section-beach__heading-subtitle {
     font-size: 1.4rem;
+    line-height: 1.4rem;
     color: var(--text-color);
     font-weight: 400;
     letter-spacing: 2px;
@@ -157,6 +170,7 @@
 .section-destination__heading-title,
 .section-beach__heading-title {
     font-size: 3.6rem;
+    line-height: 3.6rem;
     color: var(--title-color);
 }
 
@@ -543,6 +557,7 @@
     justify-content: center;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
 }
 

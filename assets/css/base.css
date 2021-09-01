@@ -49,52 +49,8 @@ a {
     text-decoration: none;
 }
 
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -16px;
-    margin-right: -16px;
-}
 
 
-/* take 2/12 width */
-.grid__column-2 {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 16.6666%;
-}
-
-
-/* take 4/12 width */
-.grid__column-4 {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 33.3333%;
-}
-
-/* take 6/12 width */
-.grid__column-6 {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 50%;
-}
-
-/* take 8/12 width */
-.grid__column-8 {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 66.6667%;
-}
 
 .btn {
     font-size: 1.4rem;
@@ -108,7 +64,11 @@ a {
     text-decoration: none;
     color: var(--white-color);
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 
 /* button color */
@@ -140,8 +100,7 @@ a {
 
 .slider {
     position: relative;
-    margin-top: 0;
-}
+}   
 
 /* animation */
 @keyframes slideIn {
@@ -243,6 +202,14 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.mb-76 {
-    margin-bottom: 76px;
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.not-visible {
+    visibility: hidden !important;
 }

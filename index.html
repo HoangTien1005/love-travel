@@ -19,139 +19,153 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/package.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
   </head>
   <body>
       <div class="app">
           <header class="header">
               <div class="header__logo">
-                  <a href="#" class="header__logo-link">
+                  <a href="/" class="header__logo-link">
                       <img src="./assets/img/header/header_logo.png" alt="travel logo" class="header__logo-img">
                   </a>
               </div>
-              <ul class="nav">
-                  <li class="nav__item"><a href="#" class="nav__item-link">home</a></li>
-                  <li class="nav__item">
-                      <a href="" class="nav__item-link">packages</a>
-                      <ul class="subnav">
-                          <li class="subnav__item">
-                              <a href="" class="subnav__item-link">
-                                  Search 1
-                                  <div class="nav__label nav__label--primary-second-color">hot</div>
-                                </a>
-                            </li>
-                          <li class="subnav__item"><a href="" class="subnav__item-link">Search 2</a></li>
-                          <li class="subnav__item">
-                              <a href="" class="subnav__item-link">
-                                  Tour Package
-                                  <i class="subnav__item-arrow-right fas fa-caret-right"></i>
-                                </a>
-                              <ul class="sub-subnav">
-                                  <li class="sub-subnav__item">
-                                      <a href="" class="sub-subnav__item-link">
-                                        Carousel
-                                        <div class="nav__label nav__label--primary-first-color">best</div>
-
+              <div class="nav-container">
+                <div class="mobile-nav__close show-on-mobile-tablet">
+                    <img src="./assets/img/icon/icon_close.png" alt="" class="mobile-nav__close-icon">
+                  </div>
+                  <ul class="nav">
+                      <li class="nav__item"><a href="/" class="nav__item-link">home</a></li>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">packages</a>
+                          <ul class="subnav">
+                              <li class="subnav__item">
+                                  <a href="" class="subnav__item-link">
+                                      Search 1
+                                      <div class="nav__label nav__label--primary-second-color">hot</div>
                                     </a>
                                 </li>
-                                  <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Custom Map</a></li>
-                                  <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">360° Panorama</a></li>
-                                  <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Default</a></li>
-                              </ul>
+                              <li class="subnav__item"><a href="" class="subnav__item-link">Search 2</a></li>
+                              <li class="subnav__item">
+                                  <a href="" class="subnav__item-link">
+                                      Tour Package
+                                      <i class="subnav__item-arrow-right fas fa-caret-right"></i>
+                                    </a>
+                                  <ul class="sub-subnav">
+                                      <li class="sub-subnav__item">
+                                          <a href="" class="sub-subnav__item-link">
+                                            Carousel
+                                            <div class="nav__label nav__label--primary-first-color">best</div>
+    
+                                        </a>
+                                    </li>
+                                      <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Custom Map</a></li>
+                                      <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">360° Panorama</a></li>
+                                      <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Default</a></li>
+                                  </ul>
+                                </li>
+                              <li class="subnav__item"><a href="" class="subnav__item-link">Destination</a></li>
+                              <li class="subnav__item"><a href="" class="subnav__item-link">Typology</a></li>
+                          </ul>
+                        </li>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">shop</a>
+                          <ul class="subnav">
+                              <li class="subnav__item"><a href="" class="subnav__item-link">Archive</a></li>
+                              <li class="subnav__item"><a href="" class="subnav__item-link">Single Product</a></li>
+                              <li class="subnav__item"><a href="" class="subnav__item-link">Cart</a></li>
+                              <li class="subnav__item"><a href="" class="subnav__item-link">Checkout</a></li>
+                          </ul>
+                    </li>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">about us</a>
+                          <ul class="subnav">
+                            <li class="subnav__item">
+                                <a href="" class="subnav__item-link">
+                                    About Us
+                                    <div class="nav__label nav__label--primary-third-color">new</div>
+                                </a>
                             </li>
-                          <li class="subnav__item"><a href="" class="subnav__item-link">Destination</a></li>
-                          <li class="subnav__item"><a href="" class="subnav__item-link">Typology</a></li>
-                      </ul>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">About Us 2</a></li>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">About Us 3</a></li>
+                          </ul>
                     </li>
-                  <li class="nav__item">
-                      <a href="" class="nav__item-link">shop</a>
-                      <ul class="subnav">
-                          <li class="subnav__item"><a href="" class="subnav__item-link">Archive</a></li>
-                          <li class="subnav__item"><a href="" class="subnav__item-link">Single Product</a></li>
-                          <li class="subnav__item"><a href="" class="subnav__item-link">Cart</a></li>
-                          <li class="subnav__item"><a href="" class="subnav__item-link">Checkout</a></li>
-                      </ul>
-                </li>
-                  <li class="nav__item">
-                      <a href="" class="nav__item-link">about us</a>
-                      <ul class="subnav">
-                        <li class="subnav__item">
-                            <a href="" class="subnav__item-link">
-                                About Us
-                                <div class="nav__label nav__label--primary-third-color">new</div>
-                            </a>
-                        </li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">About Us 2</a></li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">About Us 3</a></li>
-                      </ul>
-                </li>
-                  <li class="nav__item">
-                      <a href="" class="nav__item-link">pages</a>
-                      <ul class="subnav">
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Services</a></li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Agency Tours</a></li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Testimonials</a></li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Prices</a></li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Promotions</a></li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Faq</a></li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Coming Soon</a></li>
-                        <li class="subnav__item">
-                            <a href="" class="subnav__item-link">
-                                About Us
-                                <i class="subnav__item-arrow-right fas fa-caret-right"></i>
-                            </a>
-                            <ul class="sub-subnav">
-                                <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">About Us 1</a></li>
-                                <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">About Us 2</a></li>
-                                <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">About Us 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="subnav__item">
-                            <a href="" class="subnav__item-link">
-                                Contact
-                                <i class="subnav__item-arrow-right fas fa-caret-right"></i>
-                            </a>
-                            <ul class="sub-subnav">
-                                <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Contact 1</a></li>
-                                <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Contact 2</a></li>
-                            </ul>
-                        </li>
-                      </ul>
-                </li>
-                  <li class="nav__item">
-                      <a href="" class="nav__item-link">news</a>
-                      <ul class="subnav">
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Archive</a></li>
-                        <li class="subnav__item">
-                            <a href="" class="subnav__item-link">
-                                Single Post
-                                <i class="subnav__item-arrow-right fas fa-caret-right"></i>
-                            </a>
-                            <ul class="sub-subnav">
-                                <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Full Width</a></li>
-                                <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Right Sidebar</a></li>
-                                <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Left Sidebar</a></li>
-                            </ul>
-                        </li>
-                      </ul>
-                </li>
-                  <li class="nav__item">
-                      <a href="" class="nav__item-link">contact</a>
-                      <ul class="subnav">
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Contact 1</a></li>
-                        <li class="subnav__item"><a href="" class="subnav__item-link">Contact 2</a></li>
-                      </ul>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">pages</a>
+                          <ul class="subnav">
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Services</a></li>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Agency Tours</a></li>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Testimonials</a></li>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Prices</a></li>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Promotions</a></li>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Faq</a></li>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Coming Soon</a></li>
+                            <li class="subnav__item">
+                                <a href="" class="subnav__item-link">
+                                    About Us
+                                    <i class="subnav__item-arrow-right fas fa-caret-right"></i>
+                                </a>
+                                <ul class="sub-subnav">
+                                    <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">About Us 1</a></li>
+                                    <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">About Us 2</a></li>
+                                    <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">About Us 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="" class="subnav__item-link">
+                                    Contact
+                                    <i class="subnav__item-arrow-right fas fa-caret-right"></i>
+                                </a>
+                                <ul class="sub-subnav">
+                                    <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Contact 1</a></li>
+                                    <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Contact 2</a></li>
+                                </ul>
+                            </li>
+                          </ul>
                     </li>
-              </ul>
-              <a href="" class="btn btn--primary-fourth-color header__btn">Book Now</a>
-              <div class="header__menu-icon-container" ">
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">news</a>
+                          <ul class="subnav">
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Archive</a></li>
+                            <li class="subnav__item">
+                                <a href="" class="subnav__item-link">
+                                    Single Post
+                                    <i class="subnav__item-arrow-right fas fa-caret-right"></i>
+                                </a>
+                                <ul class="sub-subnav">
+                                    <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Full Width</a></li>
+                                    <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Right Sidebar</a></li>
+                                    <li class="sub-subnav__item"><a href="" class="sub-subnav__item-link">Left Sidebar</a></li>
+                                </ul>
+                            </li>
+                          </ul>
+                    </li>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">contact</a>
+                          <ul class="subnav">
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Contact 1</a></li>
+                            <li class="subnav__item"><a href="" class="subnav__item-link">Contact 2</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav__item header__btn">
+                            <a href="" class="btn btn--primary-fourth-color ">Book Now</a>
+                        </li>
+                  </ul>
+                
+              </div>
+              
+              <div class="header__menu-icon-container menu-mobile-nav show-on-mobile-tablet">
+                <img src="./assets/img/icon/icon_menu.png" alt="" class="header__menu-icon">
+            </div>
+              <div class="header__menu-icon-container menu-pc-slide hide-on-mobile-tablet">
                   <img src="./assets/img/icon/icon_menu.png" alt="" class="header__menu-icon">
               </div>
-              <div class="menu-slide">
+              <div class="menu-slide hide-on-mobile-tablet">
 
                 <div class="menu-slide__close">
                     <img src="./assets/img/icon/icon_close.png" alt="" class="menu-slide__close-icon">
@@ -257,67 +271,85 @@
               </div>
           </header>
     
-    <div class="slider" style="opacity: 0.9; padding-top: 873px; background: url(./assets/img/slider/slider_main.jpeg) top center / cover no-repeat;">
+    <div class="slider main-slider" style="opacity: 0.9; padding-top: 873px; background: url(./assets/img/slider/slider_main.jpeg) center / cover no-repeat;  background-attachment: fixed;">
     </div>
-    <div class="search-box">
-        <h1 class="search-box__title">Search your next 
-            <span>Holiday</span>
-            </h1>
-        <h3 class="search-box__description">CHECK OUR BEST PROMOTIONS</h3>
-        <div class="search-box__input">
+        <div class="search-box">
+            <div class="grid wide">
+                <div class="row">
+                    <h1 class="search-box__title col l-12 m-12 c-12">Search your next 
+                        <span>Holiday</span>
+                        </h1>
+                    <h3 class="search-box__description col l-12 m-12 c-12">CHECK OUR BEST PROMOTIONS</h3>
+                    <div class="search-box__input col l-4 m-12 c-12 l-o-4">
+                        
+                        <input type="text" class="search-box__input-focus" placeholder="Choose your Destination ...">
+                        Choose your Destination ...
+                        <i class="search-box__icon fas fa-search"></i>
+                        <ul class="search-box__list">
+                            <li class="search-box__list-item">Europe</li>
+                            <li class="search-box__list-item search-box__list-item--sub"> - Italy</li>
+                            <li class="search-box__list-item search-box__list-item--sub"> - Netherlands</li>
             
-            <input type="text" class="search-box__input-focus" placeholder="Choose your Destination ...">
-            Choose your Destination ...
-            <i class="search-box__icon fas fa-search"></i>
-            <ul class="search-box__list">
-                <li class="search-box__list-item">Europe</li>
-                <li class="search-box__list-item search-box__list-item--sub"> - Italy</li>
-                <li class="search-box__list-item search-box__list-item--sub"> - Netherlands</li>
+                            <li class="search-box__list-item">Asia</li>
+                            <li class="search-box__list-item search-box__list-item--sub"> - Thailandia</li>
+            
+                            <li class="search-box__list-item">United States</li>
+                            <li class="search-box__list-item">Oceania</li>
+                        </ul>
+                    </div>
+                    <div class="search-box__typology col l-12 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="search-box__typology-item">
+                                    <a href="./typologies/relax/" class="search-box__typology-item-link">
+                                        <img src="./assets/img/icon/icon_relax.png" alt="" class="search-box__typology-item-img">
+                                        <span class="search-box__typology-item-name">
+                                            RELAX
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
 
-                <li class="search-box__list-item">Asia</li>
-                <li class="search-box__list-item search-box__list-item--sub"> - Thailandia</li>
+                                <div class="search-box__typology-item">
+                                    <a href="./typologies/cultural/" class="search-box__typology-item-link">
+                                        <img src="./assets/img/icon/icon_cultural.png" alt="" class="search-box__typology-item-img">
+                                        <span class="search-box__typology-item-name">
+                                            CULTURAL
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
 
-                <li class="search-box__list-item">United States</li>
-                <li class="search-box__list-item">Oceania</li>
-            </ul>
-        </div>
-        <div class="search-box__typology">
-            <div class="search-box__typology-item">
-                <a href="./typologies/relax/" class="search-box__typology-item-link">
-                    <img src="./assets/img/icon/icon_relax.png" alt="" class="search-box__typology-item-img">
-                    <span class="search-box__typology-item-name">
-                        RELAX
-                    </span>
-                </a>
+                                <div class="search-box__typology-item">
+                                    <a href="./typologies/sport/" class="search-box__typology-item-link">
+                                        <img src="./assets/img/icon/icon_sport.png" alt="" class="search-box__typology-item-img">
+                                        <span class="search-box__typology-item-name">
+                                            SPORT
+                                    </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="search-box__typology-item">
+                                    <a href="./typologies/history/" class="search-box__typology-item-link">
+                                        <img src="./assets/img/icon/icon_history.png" alt="" class="search-box__typology-item-img">
+                                        <span class="search-box__typology-item-name">
+                                            HISTORY
+                                    </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
             </div>
-            <div class="search-box__typology-item">
-                <a href="./typologies/cultural/" class="search-box__typology-item-link">
-                    <img src="./assets/img/icon/icon_cultural.png" alt="" class="search-box__typology-item-img">
-                    <span class="search-box__typology-item-name">
-                        CULTURAL
-                    </span>
-                </a>
             </div>
-            <div class="search-box__typology-item">
-                <a href="./typologies/sport/" class="search-box__typology-item-link">
-                    <img src="./assets/img/icon/icon_sport.png" alt="" class="search-box__typology-item-img">
-                    <span class="search-box__typology-item-name">
-                        SPORT
-                </span>
-                </a>
-            </div>
-            <div class="search-box__typology-item">
-                <a href="./typologies/history/" class="search-box__typology-item-link">
-                    <img src="./assets/img/icon/icon_history.png" alt="" class="search-box__typology-item-img">
-                    <span class="search-box__typology-item-name">
-                        HISTORY
-                </span>
-                </a>
-            </div>
-        </div>
-
+    
+       
     </div>
-          <div class="app__container">
+    <div class="app__container">
               <div class="section-destination">
                   <div class="section-destination__heading">
                       <h3 class="section-destination__heading-subtitle">OUR PROPOSALS</h3>
@@ -325,9 +357,9 @@
                           <span>DESTINATIONS</span> 
                       </h2>
                   </div>
-                <div class="grid"> 
-                    <div class="grid__row">
-                        <div class="grid__column-4">
+                <div class="grid wide"> 
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-destination__item">
                                 <div class="section-destination__item-cover"></div>
                                 <img src="./assets/img/icon/symbol_berlin.png" alt="" class="section-destination__item-icon">
@@ -345,7 +377,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-destination__item">
                                 <div class="section-destination__item-cover"></div>
                                 <img src="./assets/img/icon/symbol_phuket.png" alt="" class="section-destination__item-icon">
@@ -362,7 +394,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-destination__item">
                                 <div class="section-destination__item-cover"></div>
                                 <img src="./assets/img/icon/symbol_hongkong.png" alt="" class="section-destination__item-icon">
@@ -379,7 +411,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-destination__item">
                                 <div class="section-destination__item-cover"></div>
                                 <img src="./assets/img/icon/symbol_tuscany.png" alt="" class="section-destination__item-icon">
@@ -395,7 +427,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-destination__item">
                                 <div class="section-destination__item-cover"></div>
                                 <img src="./assets/img/icon/symbol_amsterdam.png" alt="" class="section-destination__item-icon">
@@ -411,7 +443,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-destination__item">
                                 <div class="section-destination__item-cover"></div>
                                 <img src="./assets/img/icon/symbol_francisco.png" alt="" class="section-destination__item-icon">
@@ -445,9 +477,9 @@
                 </div>
             </div>
             <div class="section-beach">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__column-4">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-beach__heading">
                                 <h3 class="section-beach__heading-subtitle">NORTH AMERICA</h3>
                                 <h2 class="section-beach__heading-title">The Best
@@ -472,7 +504,7 @@
                                 <a href="" class="section-beach__btn btn btn--primary-third-color">book now</a>
                             </div>
                         </div>
-                        <div class="grid__column-8">
+                        <div class="col l-8 m-12 c-12">
                             <div class="section-beach__slider-background">
                                 <div class="section-beach__slider-options">
                                     <div class="section-beach__slider-options-btn section-beach__slider-options-btn--first"></div>
@@ -518,7 +550,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-beach__tour">
                                 <img src="./assets/img/icon/icon-beach1.png" alt="" class="section-beach__tour-icon">
                                 <div class="section-beach__tour-content">
@@ -530,7 +562,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-beach__tour">
                                 <img src="./assets/img/icon/icon-beach1.png" alt="" class="section-beach__tour-icon">
                                 <div class="section-beach__tour-content">
@@ -542,7 +574,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="section-beach__tour">
                                 <img src="./assets/img/icon/icon-beach1.png" alt="" class="section-beach__tour-icon">
                                 <div class="section-beach__tour-content">
@@ -580,9 +612,9 @@
                         <span>PACKAGES</span> 
                     </h2>
                 </div>
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__column-4">
+                <div class="grid wide">
+                    <div class="row package-item__list">
+                        <div class="col l-4 m-12 c-12">
                             <div class="package-item package-item--berlin">
                                 <div class="package-item__img">
                                     <div class="package-item__symbol-container">
@@ -624,7 +656,7 @@
                                 
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="package-item package-item--hongkong">
                                 <div class="package-item__img">
                                     <div class="package-item__symbol-container">
@@ -667,7 +699,7 @@
                                 
                             </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-12 c-12">
                             <div class="package-item package-item--francisco">
                                 <div class="package-item__img">
                                     <div class="package-item__symbol-container">
@@ -715,7 +747,7 @@
             </div>
           </div>
           <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="footer-contact-container">
                     <div class="footer-slogan">
                         <div class="footer-slogan__heading">
@@ -730,9 +762,9 @@
                 </div>
             </div>
            
-            <div class="grid footer-container ">
-                <div class="grid__row">
-                    <div class="grid__column-6">
+            <div class="grid wide footer-container ">
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
                         <div class="footer-message-container">
                             <div class="footer-message__logo">
                                 <img src="./assets/img/footer_logo.png" alt="" class="footer-message__logo-img">
@@ -764,10 +796,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="grid__column-6">
-                        <div class="grid">
-                            <div class="grid__row">
-                                <div class="grid__column-4">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="grid wide footer-list__container">
+                            <div class="row">
+                                <div class="col l-4 m-4 c-12">
                                     <div class="footer-list__item">
                                         <span class="footer-list__item-title">
                                             our Agency
@@ -796,7 +828,7 @@
                                         </ul>
                                     </div>
                             </div>
-                            <div class="grid__column-4">
+                            <div class="col l-4 m-4 c-12">
                                 <div class="footer-list__item">
                                     <span class="footer-list__item-title">
                                         partners
@@ -825,7 +857,7 @@
                                     </ul>
                                 </div>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-4 m-4 c-12">
                             <div class="footer-list__item">
                                 <span class="footer-list__item-title">
                                     last minutes
@@ -866,7 +898,7 @@
                 </div>
             </div>
           </footer>
-          <div class="modal-container">
+          <div class="modal-container hide-on-mobile-tablet">
               <a href="#" class="modal-link">
                   <div class="modal__price">
                     <span class="modal__label">buy now</span>
