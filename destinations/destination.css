@@ -1,0 +1,104 @@
+.section-destination__container {
+    margin-top: 48px;
+}
+
+.section-destination__text-first-para {
+    display: flex;
+}
+
+
+.section-destination__text p{
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.section-destination__text span {
+    font-size: 7rem;
+    line-height: 7rem;
+    margin: 16px 20px;
+    color: var(--text-color);
+}
+
+.section-destination__info-container {
+    border: 1px solid #f1f1f1;
+    padding: 12px 32px;
+
+}
+
+.section-destination__info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.section-destination__info-icon {
+    background-color: var(--primary-first-color);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.section-destination__info-icon img {
+    width: 24px;
+}
+
+
+.section-destination__info-title {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--title-color);
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.section-destination__info-subtitle {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.section-destination__heading {
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-destination__heading-subtitle,
+.section-beach__heading-subtitle {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.section-destination__heading-title,
+.section-beach__heading-title {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    color: var(--title-color);
+}
+
+.section-destination__heading-title span {
+    position: relative;
+}
+
+.section-destination__heading-title span::after {
+    content: "";
+    position: absolute;
+    top: 68%;
+    left: 0;
+    background-color: var(--primary-first-color);
+    width: 100%;
+    height: 5px;
+    z-index: -1;
+}

@@ -1,0 +1,15 @@
+
+.cart-list {
+    margin-bottom: 60px;
+}
+
+.cart-list__description {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.cart-list__btn {
+    padding: 12px 16px;
+}

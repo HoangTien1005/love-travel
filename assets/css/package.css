@@ -1,9 +1,13 @@
 /* package item */
 
+.package-item__list {
+    margin-bottom: 52px;
+}
+
 .package-item {
     border: 1px solid #eee;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 32px;
     top: 0;
     transition: linear 0.1s;
 }
