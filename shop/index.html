@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart - Love Travel</title>
+    <title>Products - Love Travel</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../assets/css/package.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./shop.css">
   </head>
   <body>
       <div class="app">
@@ -75,12 +75,12 @@
                           </ul>
                         </li>
                       <li class="nav__item">
-                          <a href="../shop/" class="nav__item-link">shop</a>
+                          <a href="" class="nav__item-link">shop</a>
                           <ul class="subnav">
-                              <li class="subnav__item"><a href="../shop/" class="subnav__item-link">Archive</a></li>
+                              <li class="subnav__item"><a href="" class="subnav__item-link">Archive</a></li>
                               <li class="subnav__item"><a href="" class="subnav__item-link">Single Product</a></li>
-                              <li class="subnav__item"><a href="" class="subnav__item-link">Cart</a></li>
-                              <li class="subnav__item"><a href="" class="subnav__item-link">Checkout</a></li>
+                              <li class="subnav__item"><a href="../cart/" class="subnav__item-link">Cart</a></li>
+                              <li class="subnav__item"><a href="../cart/" class="subnav__item-link">Checkout</a></li>
                           </ul>
                     </li>
                       <li class="nav__item">
@@ -272,25 +272,195 @@
               </div>
           </header>
     
-    <div class="slider" style="opacity: 0.9; padding-top: 314px; background: url(../assets/img/slider/slider_cart.jpeg) center / cover no-repeat;  background-attachment: fixed;">
-    </div>
-  
-    <div class="mb-40"></div>
+    <div class="slider" style="opacity: 0.9; padding-top: 314px; background: url(../assets/img/slider/slider_shop.jpeg) bottom / cover no-repeat;  background-attachment: fixed;"></div>
     <div class="app__container">
-        <div class="cart-section">
-            <div class="grid wide">
-                <div class="row">
-                    <div class="col l-3">
-                        <div class="cart-list">
-                            <p class="cart-list__description">Your cart is currently empty.</p>
-                            <a href="" class="cart-list__btn btn btn--primary-third-color">return to shop</a>
-                        </div>
+       <div class="section-shop">
+           <div class="grid wide">
+               <div class="row">
+                <div class="col l-3 m-6 c-6">
+                    <div class="shop-list__item">
+                     <a href="" class="shop-list__item-img-link">
+                         <div class="shop-list__item-img" style="background: url(../assets/img/shop/product1.jpeg) center / cover no-repeat;"></div>
+                     </a>
+                        <a href="" class="shop-list__item-title">Bora Bora</a>
+                        <a href="" class="shop-list__item-rating">
+                         <i class="shop-list__item-rating-star fas fa-star"></i>
+                         <i class="shop-list__item-rating-star fas fa-star"></i>
+                         <i class="shop-list__item-rating-star fas fa-star"></i>
+                         <i class="shop-list__item-rating-star fas fa-star"></i>
+                         <i class="shop-list__item-rating-star fas fa-star"></i>
+                        </a>
+                        <a href="" class="shop-list__item-price">
+                            <span class="shop-list__item-price-new">
+                                $1,000.00 - $2,000.00
+                            </span>
+                        </a>
+                        <button class="shop-list__item-action">select options</button>
                     </div>
                 </div>
-            </div>
-         
-        </div>
-          </div>
+                <div class="col l-3 m-6 c-6">
+                 <div class="shop-list__item">
+                     <a href="" class="shop-list__item-img-link">
+                         <div class="shop-list__item-img" style="background: url(../assets/img/shop/product2.jpeg) center / cover no-repeat;"></div>
+                     </a>
+                     <a href="" class="shop-list__item-title">Hawaii Coast</a>
+                     <a href="" class="shop-list__item-rating">
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                     </a>
+                     <a href="" class="shop-list__item-price">
+                      <span class="shop-list__item-price-old">
+                          $1,000.00
+                      </span>
+                         <span class="shop-list__item-price-new">
+                             $800.00
+                         </span>
+                     </a>
+                     <button class="shop-list__item-action">add to cart</button>
+                     <span class="shop-list__item-sale">sale!</span>
+                 </div>
+             </div>
+             <div class="col l-3 m-6 c-6">
+                 <div class="shop-list__item">
+                    <a href="" class="shop-list__item-img-link">
+                        <div class="shop-list__item-img" style="background: url(../assets/img/shop/product3.jpeg) center / cover no-repeat;"></div>
+                    </a>
+                     <a href="" class="shop-list__item-title">Jamaica</a>
+                     <a href="" class="shop-list__item-rating">
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                     </a>
+                     <a href="" class="shop-list__item-price">
+                         <span class="shop-list__item-price-new">
+                             $1,000.00 - $2,000.00
+                         </span>
+                     </a>
+                     <button class="shop-list__item-action">select options</button>
+                 </div>
+             </div>
+             <div class="col l-3 m-6 c-6">
+                 <div class="shop-list__item">
+                     <a href="" class="shop-list__item-img-link">
+                        <div class="shop-list__item-img" style="background: url(../assets/img/shop/product4.jpeg) center / cover no-repeat;"></div>
+                     </a>
+                     <a href="" class="shop-list__item-title">Ko Samui</a>
+                     <a href="" class="shop-list__item-rating">
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                     </a>
+                     <a href="" class="shop-list__item-price">
+                      <span class="shop-list__item-price-old">
+                          $1,200.00
+                      </span>
+                         <span class="shop-list__item-price-new">
+                             $999.00
+                         </span>
+                     </a>
+                     <button class="shop-list__item-action">add to cart</button>
+                     <span class="shop-list__item-sale">sale!</span>
+                 </div>
+             </div>
+             <div class="col l-3 m-6 c-6">
+                 <div class="shop-list__item">
+                     <a href="" class="shop-list__item-img-link">
+                        <div class="shop-list__item-img" style="background: url(../assets/img/shop/product5.jpeg) center / cover no-repeat;"></div>
+                     </a>
+                     <a href="" class="shop-list__item-title">Le Seychelles</a>
+                     <a href="" class="shop-list__item-rating">
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                     </d>
+                     <a href="" class="shop-list__item-price">
+                         <span class="shop-list__item-price-new">
+                             $1,000.00 - $2,000.00
+                         </span>
+                     </a>
+                     <button class="shop-list__item-action">select options</button>
+                 </div>
+             </div>
+             <div class="col l-3 m-6 c-6">
+                 <div class="shop-list__item">
+                     <a href="" class="shop-list__item-img-link">
+                         <div class="shop-list__item-img" style="background: url(../assets/img/shop/product6.jpeg) center / cover no-repeat;"></div>
+                     </a>
+                     <a href="" class="shop-list__item-title">Maldives</a>
+                     <a href="" class="shop-list__item-rating">
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                     </a>
+                     <a href="" class="shop-list__item-price">
+                      <span class="shop-list__item-price-old">
+                          $900.00
+                      </span>
+                         <span class="shop-list__item-price-new">
+                             $500.00
+                         </span>
+                     </a>
+                     <button class="shop-list__item-action">add to cart</button>
+                     <span class="shop-list__item-sale">sale!</span>
+                 </div>
+             </div>
+             <div class="col l-3 m-6 c-6">
+                 <div class="shop-list__item">
+                     <a href="" class="shop-list__item-img-link">
+                        <div class="shop-list__item-img" style="background: url(../assets/img/shop/product7.jpeg) center / cover no-repeat;"></div>
+                     </a>
+                     <a href="" class="shop-list__item-title">Phuket</a>
+                     <a href="" class="shop-list__item-rating">
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                     </a>
+                     <a href="" class="shop-list__item-price">
+                         <span class="shop-list__item-price-new">
+                             $1,000.00 - $2,000.00
+                         </span>
+                     </a>
+                     <button class="shop-list__item-action">select options</button>
+                 </div>
+             </div>
+             <div class="col l-3 m-6 c-6">
+                 <div class="shop-list__item">
+                     <a href="" class="shop-list__item-img-link">
+                         <div class="shop-list__item-img" style="background: url(../assets/img/shop/product8.jpeg) center / cover no-repeat;"></div>
+                     </a>
+                     <a href="" class="shop-list__item-title">Polynesia</a>
+                     <a href="" class="shop-list__item-rating">
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                      <i class="shop-list__item-rating-star fas fa-star"></i>
+                     </a>
+                     <a href="" class="shop-list__item-price">
+                         <span class="shop-list__item-price-new">
+                             $1,600.00
+                         </span>
+                     </a>
+                     <button class="shop-list__item-action">add to cart</button>
+                 </div>
+             </div>
+               </div>
+           </div>
+       </div>
+    </div>
           <footer class="footer">
             <div class="grid wide">
                 <div class="footer-contact-container">
