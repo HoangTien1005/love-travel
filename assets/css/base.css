@@ -102,6 +102,18 @@ a {
     position: relative;
 }   
 
+
+.page-title {
+    font-size: 3rem;
+    position: absolute;
+    color: var(--white-color);
+    top: 222px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+    font-weight: 700;
+    letter-spacing: 1px;
+    left: 128px;
+}
+
 /* animation */
 @keyframes slideIn {
     from {

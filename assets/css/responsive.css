@@ -97,6 +97,7 @@
         padding-top: 1240px !important;
     }
 
+    
     .section-discover {
         flex-direction: column;
     }
@@ -189,6 +190,11 @@
         display: block;
     }
 
+    .page-title {
+        left: 80px;
+    }
+
+
     .package-item__img {
         padding-top: 360px;
     }
@@ -213,6 +219,11 @@
     .header__menu-icon-container, .header__logo {
         margin: 0;
     }
+
+    .page-title {
+        left: 60px;
+    }
+
 
     .section-holiday__title {
         text-align: center;
